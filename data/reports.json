@@ -3,12 +3,54 @@
   "siteTitle": "Cyber Regulation Watch",
   "timezone": "Asia/Taipei",
   "cadence": "FREQ=WEEKLY;BYDAY=MO;BYHOUR=8;BYMINUTE=0",
-  "lastUpdated": null,
+  "lastUpdated": "2026-07-28T15:18:00+08:00",
   "nextScheduledRun": "2026-08-03T08:00:00+08:00",
   "milestones": {
     "craArticle14": "2026-09-11T00:00:00+02:00",
     "craFullApplication": "2027-12-11T00:00:00+01:00"
   },
-  "reports": []
+  "reports": [
+    {
+      "id": "2026-07-28",
+      "title": "Cyber Regulation Watch｜2026-07-28",
+      "publishedAt": "2026-07-28T15:18:00+08:00",
+      "coverageStart": "2026-07-21",
+      "coverageEnd": "2026-07-28",
+      "status": "material-change",
+      "executiveSummary": "本週出現兩組實質變更：歐盟執委會 7/27 發布 CRA 非拘束性實務指引，具體釐清範圍、重大修改、支援期間、產品分類、遠端資料處理、風險評估及 Article 14 通報；中國 7/24 公布小型個資處理者簡化規定與資料出境問答。距 CRA Article 14 生效 45 天，建議立即完成責任人、產品／RDPS 清冊與 24h／72h／Final 演練。",
+      "scopes": [
+        "EU CRA",
+        "NIS2",
+        "ISO 27001",
+        "IEC 62443",
+        "RED DA",
+        "CSL/DSL/PIPL"
+      ],
+      "tags": [
+        "Article 14",
+        "C(2026) 5252",
+        "SRP",
+        "RDPS",
+        "PIPL"
+      ],
+      "priorityCounts": {
+        "P0": 1,
+        "P1": 5,
+        "P2": 4,
+        "P3": 0
+      },
+      "decisions": [
+        "核准 CRA Article 14 責任模型與 24h／72h／Final 演練",
+        "依 C(2026) 5252 重跑產品範圍、分類、RDPS 與風險評估",
+        "確認中國小型個資處理者門檻與 2026-09-01 前程序調整"
+      ],
+      "deadlines": [
+        "2026-09-01 — 中國小型個資處理者簡化措施規定生效",
+        "2026-09-11 — CRA Article 14 與 SRP",
+        "2027-12-11 — CRA 主要義務全面適用"
+      ],
+      "reportPath": "reports/2026/2026-07-28.md",
+      "sourceCount": 14
+    }
+  ]
 }
-
