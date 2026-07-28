@@ -281,9 +281,23 @@ function renderSchedule(manifest) {
     ? "MON · 08:00 TPE"
     : "週一 · 08:00 臺北";
 
-  const craDate = new Date(manifest.milestones.craArticle14);
-  const todayInTaipei = new Date(new Date().toLocaleString("en-US", { timeZone: "Asia/Taipei" }));
-  const days = Math.max(0, Math.ceil((craDate - todayInTaipei) / 86400000));
+  const taipeiParts = Object.fromEntries(
+    new Intl.DateTimeFormat("en-CA", {
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+      timeZone: "Asia/Taipei"
+    }).formatToParts(new Date())
+      .filter((part) => part.type !== "literal")
+      .map((part) => [part.type, Number(part.value)])
+  );
+  const [craYear, craMonth, craDay] = manifest.milestones.craArticle14
+    .slice(0, 10)
+    .split("-")
+    .map(Number);
+  const todayCalendar = Date.UTC(taipeiParts.year, taipeiParts.month - 1, taipeiParts.day);
+  const craCalendar = Date.UTC(craYear, craMonth - 1, craDay);
+  const days = Math.max(0, Math.ceil((craCalendar - todayCalendar) / 86400000));
   document.getElementById("cra-days").textContent = String(days).padStart(2, "0");
 }
 
@@ -323,4 +337,3 @@ document.querySelectorAll("#filters input, #filters select").forEach((field) => 
 
 applyLanguage(state.language);
 loadManifest();
-
