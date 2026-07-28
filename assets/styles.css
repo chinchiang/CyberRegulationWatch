@@ -341,8 +341,14 @@ select {
   position: relative;
   z-index: 2;
   width: min(430px, 100%);
+  aspect-ratio: 1;
   height: auto;
-  filter: drop-shadow(0 26px 28px rgba(37, 29, 94, 0.12));
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  border-radius: 32% 68% 58% 42% / 42% 35% 65% 58%;
+  box-shadow:
+    0 28px 60px rgba(37, 29, 94, 0.24),
+    0 0 0 8px rgba(255, 255, 255, 0.22);
 }
 
 .orbit {
@@ -1434,4 +1440,3 @@ select {
     transition-duration: 0.01ms !important;
   }
 }
-
