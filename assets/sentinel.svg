@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="520" viewBox="0 0 520 520" role="img" aria-labelledby="title desc">
+  <title id="title">Cyber regulation sentinel</title>
+  <desc id="desc">A bright futuristic analyst character holding a regulatory intelligence interface.</desc>
+  <defs>
+    <linearGradient id="hair" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#2a215f"/>
+      <stop offset=".55" stop-color="#7447ff"/>
+      <stop offset="1" stop-color="#f2298a"/>
+    </linearGradient>
+    <linearGradient id="coat" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#15152f"/>
+      <stop offset="1" stop-color="#342286"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" x2="1">
+      <stop offset="0" stop-color="#d9fbff" stop-opacity=".92"/>
+      <stop offset="1" stop-color="#eee8ff" stop-opacity=".8"/>
+    </linearGradient>
+    <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#342286" flood-opacity=".2"/>
+    </filter>
+  </defs>
+  <g fill="none" stroke-linecap="round">
+    <path d="M61 207c30-91 92-143 186-155M377 77c47 25 78 63 93 114" stroke="#7447ff" stroke-opacity=".28" stroke-width="2" stroke-dasharray="7 12"/>
+    <path d="M72 346c31 65 86 103 165 116M366 444c53-20 88-54 105-102" stroke="#00c7d7" stroke-opacity=".3" stroke-width="2" stroke-dasharray="5 11"/>
+    <circle cx="57" cy="201" r="7" fill="#f2298a" stroke="#fff" stroke-width="4"/>
+    <circle cx="469" cy="197" r="7" fill="#ff7a1a" stroke="#fff" stroke-width="4"/>
+    <circle cx="245" cy="52" r="7" fill="#7447ff" stroke="#fff" stroke-width="4"/>
+  </g>
+  <g filter="url(#shadow)">
+    <path d="M146 459c7-81 29-137 77-166h76c54 32 75 87 78 166z" fill="url(#coat)"/>
+    <path d="M226 291l35 62 38-62c-22 14-50 14-73 0z" fill="#f3c7b5"/>
+    <path d="M219 302l42 52-34 33-27-69z" fill="#fff"/>
+    <path d="M301 302l-40 52 36 32 26-69z" fill="#e9e7ff"/>
+    <path d="M221 359l40-5 40 5-12 100h-57z" fill="#6f45f4"/>
+    <path d="M178 240c-13-62 14-134 85-142 62-7 106 41 100 109-4 46-26 87-62 101-48 18-112-14-123-68z" fill="#f1c2ae"/>
+    <path d="M179 231c-18-25-12-97 21-128 32-31 98-41 137-4 38 36 38 89 25 123l-25-67c-21 18-56 27-101 21-13 29-31 48-57 55z" fill="url(#hair)"/>
+    <path d="M207 190c14-7 29-7 43 0M282 190c13-7 28-6 41 2" stroke="#2a215f" stroke-width="5"/>
+    <path d="M220 213c7 7 16 7 23 0M290 213c7 7 16 7 23 0" stroke="#342286" stroke-width="4"/>
+    <path d="M255 224l-4 22 16 2M241 269c15 10 30 10 44-1" stroke="#b56e68" stroke-width="4"/>
+    <path d="M324 247c23-3 31-15 38-36M191 247c-20-5-27-17-30-37" stroke="#5f39d1" stroke-width="11"/>
+    <rect x="342" y="193" width="34" height="67" rx="16" fill="#1c183c"/>
+    <circle cx="359" cy="226" r="7" fill="#00d5e6"/>
+    <path d="M377 252c13 5 21 17 20 34" stroke="#1c183c" stroke-width="6"/>
+    <circle cx="396" cy="290" r="7" fill="#f2298a"/>
+  </g>
+  <g filter="url(#shadow)">
+    <path d="M92 322l238-27 38 125-238 27z" fill="url(#glass)" stroke="#fff" stroke-width="5"/>
+    <path d="M112 337l188-21M118 358l97-11M122 378l137-15" stroke="#7447ff" stroke-opacity=".42" stroke-width="5"/>
+    <rect x="279" y="327" width="59" height="55" rx="10" fill="#15152f"/>
+    <path d="M294 361l10-13 9 7 13-17" stroke="#79efff" stroke-width="5"/>
+    <circle cx="318" cy="405" r="7" fill="#f2298a"/>
+  </g>
+  <path d="M145 393c-15-6-28 7-19 21 9 13 30 11 43 3M346 377c16-5 28 9 18 22-9 12-28 8-42 2" fill="#f1c2ae"/>
+  <g fill="#fff">
+    <circle cx="100" cy="278" r="5"/>
+    <circle cx="413" cy="143" r="5"/>
+    <path d="M411 329l5 12 12 5-12 5-5 12-5-12-12-5 12-5z"/>
+  </g>
+</svg>
+

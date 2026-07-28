@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "siteTitle": "Cyber Regulation Watch",
+  "timezone": "Asia/Taipei",
+  "cadence": "FREQ=WEEKLY;BYDAY=MO;BYHOUR=8;BYMINUTE=0",
+  "lastUpdated": null,
+  "nextScheduledRun": "2026-08-03T08:00:00+08:00",
+  "milestones": {
+    "craArticle14": "2026-09-11T00:00:00+02:00",
+    "craFullApplication": "2027-12-11T00:00:00+01:00"
+  },
+  "reports": []
+}
+
