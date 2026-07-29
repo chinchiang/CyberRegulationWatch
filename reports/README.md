@@ -46,4 +46,9 @@ Rules:
 - Do not automatically assign Router / Firewall / IDS / IPS to NBG. Network Switch is a confirmed EBG product category; other ownership must be marked pending internal confirmation unless verified.
 - Edge AI, automotive, industrial and healthcare vertical solutions align with NBG, but their underlying server platform may be shared with or supplied by EBG. Confirm the actual BU, PLM, contract entity, CE manufacturer, SKU, firmware / app / cloud-service owner and market placement before assigning CRA / PSIRT responsibility.
 - Organizational baseline sources: Inventec 2023 Annual Report p.11, 2024 Sustainability Report, current Personal Systems, Enterprise & Cloud Data Center, EBG and IMIS product pages, and dated official Inventec news.
+- Keep the parent-company product map separate from affiliates and investments such as IAC / Inventec Appliances and AIMobile. Do not assign affiliate smart terminals, communications, wearables or industrial mobile devices to PSG or NBG without entity- and SKU-level confirmation.
+- Use eight product-line views for management reporting: Personal Computers; AI PC / Gaming; General Servers; AI / HPC & Data Center; Storage & Networking; Automotive; 5G & Industrial / Edge Computing; Smart Healthcare.
+- Use at least nine first-level CRA Product Families: PC, Server, AI Server, Storage, Networking, Automotive, 5G, Edge AI / Industrial IoT, Smart Healthcare.
+- Data-center AI Servers belong to EBG by default; vertical Edge AI solutions for factory, healthcare or automotive contexts align more closely with NBG / IMIS. Track underlying platform supplier and final product owner separately.
+- Cross-product capabilities include ODM / JDM / CM / BTO / CTO, product design through after-sales service, Server Management, O-RAN SMO, AI Computer Vision, AR / HMI, 5G Private Network, Smart Factory, Digital Twin, Smart Inspection, and automotive functional-safety / cybersecurity / OTA integration.
 
