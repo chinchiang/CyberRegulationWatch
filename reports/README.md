@@ -38,4 +38,7 @@ Rules:
 - Keep reports sorted newest-first in the manifest.
 - Important conclusions in Markdown must include a direct source URL and publication date.
 - Draft standards must never be described as harmonised or as providing presumption of conformity unless cited in the EU Official Journal.
+- Treat business groups and product lines as separate classification axes. Do not infer a business-group owner from a product name without confirmed internal ownership.
+- `NBG` means New Business Group（新事業群）. Its scope includes Automotive Electronics, 5G Private Network / O-RAN / Edge Computing, AI Edge / Metaverse / Spatial Computing, and new-business incubation / technology validation. Automotive is one NBG domain, not a synonym for NBG.
+- Do not automatically assign Router / Switch / Firewall / IDS / IPS or the broader Networking Equipment product line to NBG. Mark ownership as pending internal confirmation unless verified.
 
