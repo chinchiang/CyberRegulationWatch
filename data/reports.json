@@ -3,13 +3,63 @@
   "siteTitle": "Cyber Regulation Watch",
   "timezone": "Asia/Taipei",
   "cadence": "FREQ=WEEKLY;BYDAY=MO;BYHOUR=8;BYMINUTE=0",
-  "lastUpdated": "2026-07-28T15:18:00+08:00",
+  "lastUpdated": "2026-07-29T11:40:39+08:00",
   "nextScheduledRun": "2026-08-03T08:00:00+08:00",
   "milestones": {
+    "aiActArticle50": "2026-08-02T00:00:00+02:00",
     "craArticle14": "2026-09-11T00:00:00+02:00",
     "craFullApplication": "2027-12-11T00:00:00+01:00"
   },
   "reports": [
+    {
+      "id": "2026-07-29",
+      "title": "Cyber Regulation Watch｜2026-07-29",
+      "publishedAt": "2026-07-29T11:40:39+08:00",
+      "coverageStart": "2026-07-23",
+      "coverageEnd": "2026-07-29",
+      "status": "material-change",
+      "executiveSummary": "Regulation (EU) 2026/1744 已於 7/27 生效，AI Act 法律基線正式變更；Article 50 與修正後 AI literacy 距 8/2 僅 4 天。CRA Article 14／ENISA SRP 距 9/11 為 44 天。建議本週完成 EU AI use-case 揭露、訓練與法人角色證據，並核准 CRA 24h／72h／Final 跨 BU 演練。",
+      "scopes": [
+        "EU CRA",
+        "EU AI Act",
+        "NIS2",
+        "Czech Cybersecurity",
+        "ISO 27001",
+        "IEC 62443",
+        "RED DA",
+        "CSL/DSL/PIPL"
+      ],
+      "tags": [
+        "BASELINE CHANGED",
+        "Regulation 2026/1744",
+        "Article 50",
+        "AI literacy",
+        "C(2026) 5252",
+        "Article 14",
+        "SRP",
+        "PIPL"
+      ],
+      "priorityCounts": {
+        "P0": 2,
+        "P1": 5,
+        "P2": 2,
+        "P3": 1
+      },
+      "decisions": [
+        "核准 2026-08-02 前 Article 50／AI literacy owner 與證據基準",
+        "以 Regulation (EU) 2026/1744 正式文字取代舊 AI Act 時程",
+        "核准 CRA Article 14 跨 BU／ICZ 的 24h／72h／Final 責任模型",
+        "決定是否簽署 Article 50 voluntary Code of Practice"
+      ],
+      "deadlines": [
+        "2026-08-02 — AI Act Article 50／AI literacy",
+        "2026-09-01 — 中國小型個資處理者簡化措施規定",
+        "2026-09-11 — CRA Article 14 與 ENISA SRP",
+        "2026-12-02 — Article 50(2) 有限過渡／新增禁止行為"
+      ],
+      "reportPath": "reports/2026/2026-07-29.md",
+      "sourceCount": 18
+    },
     {
       "id": "2026-07-28",
       "title": "Cyber Regulation Watch｜2026-07-28",
