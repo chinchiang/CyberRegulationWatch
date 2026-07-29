@@ -886,6 +886,11 @@ select {
   color: rgba(255, 255, 255, 0.7);
 }
 
+.scope-featured.scope-ai {
+  background: linear-gradient(130deg, #102944, #155b89 52%, #6b36d8);
+  box-shadow: 0 22px 60px rgba(19, 98, 143, 0.22);
+}
+
 .scope-kicker {
   display: block;
   margin-bottom: 15px;

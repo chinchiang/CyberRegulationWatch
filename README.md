@@ -6,9 +6,9 @@ Decision-ready weekly monitoring for cybersecurity regulation and standards rele
 
 - Schedule: every Monday at 08:00 (`Asia/Taipei`)
 - Primary language: Traditional Chinese using Taiwan terminology, with English legal and technical terms retained
-- Core module: EU Cyber Resilience Act (CRA)
-- Additional coverage: NIS2, ISO/IEC 27001:2022, IEC 62443, RED Delegated Act, and China CSL / DSL / PIPL
-- Output rule: one integrated brief per week; the EU CRA module is not published as a duplicate report
+- Core modules: EU Cyber Resilience Act (CRA) and EU Artificial Intelligence Act (AI Act)
+- Additional coverage: NIS2 / Czech cybersecurity, ISO/IEC 27001:2022, IEC 62443, RED Delegated Act, China CSL / DSL / PIPL, and cross-regulation dependencies
+- Output rule: one integrated brief per week; the EU CRA and EU AI Act modules are dedicated sections inside the same report, never duplicate reports
 
 Each scheduled run appends:
 
@@ -31,6 +31,7 @@ The site includes:
 
 - executive landing dashboard
 - dynamic CRA Article 14 countdown
+- dedicated EU CRA and EU AI Act monitoring cards
 - latest-report and historical archive views
 - full-text search and scope / priority / status filters
 - bilingual Traditional Chinese / English interface

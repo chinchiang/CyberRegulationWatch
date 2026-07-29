@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Cyber Regulation Watch — 全球製造業資安法規週報與行動儀表板">
+    <meta name="description" content="Cyber Regulation Watch — EU CRA、EU AI Act 與全球製造業資安法規週報及行動儀表板">
     <meta name="theme-color" content="#ffffff">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
     <title>Cyber Regulation Watch</title>
@@ -47,7 +47,7 @@
             <span class="gradient-text" data-i18n="heroLine2">可執行的管理決策。</span>
           </h1>
           <p class="hero-lede" data-i18n="heroLede">
-            每週整合 EU CRA 與全球製造業資安法規，聚焦變更、義務、期限、責任單位與下一步。
+            每週整合 EU CRA、EU AI Act 與全球製造業資安法規，聚焦變更、義務、期限、責任單位與下一步。
           </p>
           <div class="hero-actions">
             <a class="button button-primary" href="#reports">
@@ -64,7 +64,7 @@
           <img src="assets/cyber-guardian.webp" alt="" width="480" height="480" fetchpriority="high">
           <div class="signal-card signal-top">
             <span class="signal-dot p0"></span>
-            <span>CRA · ARTICLE 14</span>
+            <span>CRA · AI ACT</span>
           </div>
           <div class="signal-card signal-bottom">
             <span class="signal-dot verified"></span>
@@ -97,7 +97,7 @@
             <span data-i18n="monitoringScope">MONITORING SCOPE</span>
             <span class="metric-icon" aria-hidden="true">◎</span>
           </div>
-          <strong>06 <em data-i18n="domains">DOMAINS</em></strong>
+          <strong>07 <em data-i18n="domains">DOMAINS</em></strong>
           <small>EU · GLOBAL · CHINA</small>
         </article>
 
@@ -126,7 +126,7 @@
               <span class="status-label status-scheduled" data-i18n="scheduled">SCHEDULED</span>
               <h3 data-i18n="firstBriefTitle">首份整合週報將於 2026/08/03 08:00 發布</h3>
               <p data-i18n="firstBriefText">
-                現有 Cyber Regulation Watch 已整合 EU CRA 專版模組；完成後將自動歸檔至此。
+                現有 Cyber Regulation Watch 已整合 EU CRA 與 EU AI Act 專版模組；完成後將自動歸檔至此。
               </p>
             </div>
             <div class="launch-grid" aria-label="Initial monitoring configuration">
@@ -160,6 +160,7 @@
             <select id="scope-filter">
               <option value="" data-i18n="allScopes">所有法規</option>
               <option value="EU CRA">EU CRA</option>
+              <option value="EU AI Act">EU AI Act</option>
               <option value="NIS2">NIS2</option>
               <option value="ISO 27001">ISO 27001</option>
               <option value="IEC 62443">IEC 62443</option>
@@ -209,17 +210,21 @@
               <p>Article 14 · SRP · EUVD · Harmonised Standards · SBOM · VEX · CSAF · PSIRT</p>
             </div>
           </article>
-          <article class="scope-card">
+          <article class="scope-card scope-featured scope-ai">
             <span class="scope-number">02</span>
-            <div><h3>NIS2</h3><p>National transposition · supervisory guidance · enforcement</p></div>
+            <div>
+              <span class="scope-kicker">CORE MODULE</span>
+              <h3>EU Artificial Intelligence Act</h3>
+              <p>Article 15 · Article 50 · High-risk AI · GPAI · Conformity · AI BOM · Post-market Monitoring</p>
+            </div>
           </article>
           <article class="scope-card">
             <span class="scope-number">03</span>
-            <div><h3>ISO 27001:2022</h3><p>Revisions · interpretations · certification impact</p></div>
+            <div><h3>NIS2 / Czech Cybersecurity</h3><p>National transposition · supervisory guidance · enforcement · ICZ</p></div>
           </article>
           <article class="scope-card">
             <span class="scope-number">04</span>
-            <div><h3>IEC 62443</h3><p>OT / ICS standards · lifecycle · supplier obligations</p></div>
+            <div><h3>ISO 27001 / IEC 62443</h3><p>ISMS · OT / ICS lifecycle · supplier and product obligations</p></div>
           </article>
           <article class="scope-card">
             <span class="scope-number">05</span>
@@ -228,6 +233,10 @@
           <article class="scope-card">
             <span class="scope-number">06</span>
             <div><h3>China CSL / DSL / PIPL</h3><p>Legal isolation · data localization · cross-border controls</p></div>
+          </article>
+          <article class="scope-card">
+            <span class="scope-number">07</span>
+            <div><h3>Cross-Regulation Dependency</h3><p>CRA × AI Act · GDPR · NIS2 · product safety · roles · evidence reuse</p></div>
           </article>
         </div>
       </section>

@@ -8,6 +8,23 @@ reports/YYYY/YYYY-MM-DD.md
 
 It must also append one matching object to `data/reports.json`.
 
+## Mandatory integrated report structure
+
+Every new weekly report must use this order and remain one integrated artifact:
+
+1. Executive Regulatory Overview
+2. EU CRA 專版模組
+3. EU AI Act 專版模組
+4. NIS2／Czech Cybersecurity
+5. ISO 27001／IEC 62443／RED DA
+6. China CSL／DSL／PIPL
+7. Cross-Regulation Dependency
+8. Consolidated Action Dashboard
+
+The EU CRA and EU AI Act modules must cross-reference AI-enabled products, Article 15 cybersecurity versus CRA essential cybersecurity requirements, incident reporting, lifecycle and post-market monitoring, conformity assessment, technical documentation, SBOM / AI BOM / model-dataset-software traceability, and whether Product Manufacturer and AI Provider roles sit with the same legal entity.
+
+Industry or trade-association statements belong under `INDUSTRY POSITION`. They are never legal exceptions, regulator conclusions, or evidence that a draft requirement is in force.
+
 ## Report manifest contract
 
 ```json
@@ -19,7 +36,7 @@ It must also append one matching object to `data/reports.json`.
   "coverageEnd": "2026-08-02",
   "status": "material-change",
   "executiveSummary": "300 字內管理摘要。",
-  "scopes": ["EU CRA", "NIS2"],
+  "scopes": ["EU CRA", "EU AI Act", "NIS2"],
   "tags": ["Article 14", "SRP"],
   "priorityCounts": {"P0": 1, "P1": 2, "P2": 3, "P3": 0},
   "decisions": ["管理階層決策摘要"],
@@ -37,6 +54,8 @@ Rules:
 - Never delete or rewrite older weekly entries unless correcting a documented error.
 - Keep reports sorted newest-first in the manifest.
 - Important conclusions in Markdown must include a direct source URL and publication date.
+- Re-verify the AI Act legal baseline on every run using EUR-Lex, the Official Journal, European Commission / AI Office, AI Board, or the AI Act Single Information Platform. Mark any change as `BASELINE CHANGED`.
+- Use explicit AI Act legal-status labels: `IN FORCE`, `APPLICABLE`, `ADOPTED – NOT YET APPLICABLE`, `PROPOSAL`, `DRAFT`, `CONSULTATION`, `NON-BINDING GUIDANCE`, `VOLUNTARY CODE`, `INDUSTRY POSITION`, `MEDIA REPORT`, or `UNVERIFIED`.
 - Draft standards must never be described as harmonised or as providing presumption of conformity unless cited in the EU Official Journal.
 - Treat business groups and product lines as separate classification axes. Do not infer a business-group owner from a product name without confirmed internal ownership.
 - `PSG` means Personal Solution Group／Personal Systems（個人電腦事業群）. Confirmed products include Notebook, Desktop / AIO, Thin Client and AI PC.
