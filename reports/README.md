@@ -39,6 +39,11 @@ Rules:
 - Important conclusions in Markdown must include a direct source URL and publication date.
 - Draft standards must never be described as harmonised or as providing presumption of conformity unless cited in the EU Official Journal.
 - Treat business groups and product lines as separate classification axes. Do not infer a business-group owner from a product name without confirmed internal ownership.
-- `NBG` means New Business Group（新事業群）. Its scope includes Automotive Electronics, 5G Private Network / O-RAN / Edge Computing, AI Edge / Metaverse / Spatial Computing, and new-business incubation / technology validation. Automotive is one NBG domain, not a synonym for NBG.
-- Do not automatically assign Router / Switch / Firewall / IDS / IPS or the broader Networking Equipment product line to NBG. Mark ownership as pending internal confirmation unless verified.
+- `PSG` means Personal Solution Group／Personal Systems（個人電腦事業群）. Confirmed products include Notebook, Desktop / AIO, Thin Client and AI PC.
+- `EBG` means Enterprise Business Group（企業電腦事業群）. Confirmed products include general and AI / HPC servers, storage, network switches, racks, server-management software and enterprise / cloud data-center solutions.
+- `NBG` means New Business Group（新事業群）. Its confirmed scope includes Automotive Electronics, 5G, intelligent mobility / industrial and edge computing, and smart healthcare. Automotive is one NBG domain, not a synonym for NBG.
+- Do not list Metaverse / Spatial Computing, AI IP / silicon-IP licensing, startup incubation or technology showcases as confirmed NBG core businesses without new authoritative evidence.
+- Do not automatically assign Router / Firewall / IDS / IPS to NBG. Network Switch is a confirmed EBG product category; other ownership must be marked pending internal confirmation unless verified.
+- Edge AI, automotive, industrial and healthcare vertical solutions align with NBG, but their underlying server platform may be shared with or supplied by EBG. Confirm the actual BU, PLM, contract entity, CE manufacturer, SKU, firmware / app / cloud-service owner and market placement before assigning CRA / PSIRT responsibility.
+- Organizational baseline sources: Inventec 2023 Annual Report p.11, 2024 Sustainability Report, current Personal Systems, Enterprise & Cloud Data Center, EBG and IMIS product pages, and dated official Inventec news.
 
