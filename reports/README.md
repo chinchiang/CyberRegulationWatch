@@ -71,3 +71,10 @@ Rules:
 - Data-center AI Servers belong to EBG by default; vertical Edge AI solutions for factory, healthcare or automotive contexts align more closely with NBG / IMIS. Track underlying platform supplier and final product owner separately.
 - Cross-product capabilities include ODM / JDM / CM / BTO / CTO, product design through after-sales service, Server Management, O-RAN SMO, AI Computer Vision, AR / HMI, 5G Private Network, Smart Factory, Digital Twin, Smart Inspection, and automotive functional-safety / cybersecurity / OTA integration.
 
+## EU CRA module source
+
+- Authoritative module: `modules/eu-cra-v3.1.md`
+- Persistent cross-week state: `data/cra-watchlist.json`
+- The scheduled integrated report must read the authoritative module on every run. Its eleven CRA subsections remain nested under section 2 of the eight-section report.
+- The standalone `EU CRA 專版模組` automation is a disabled backup; it must not run alongside `Cyber Regulation Watch`.
+- CRA Flash Alert triggers in v3.1 must be surfaced immediately when detected and must preserve the module's source-tier, confidence, legal-status, and no-legal-conclusion rules.
