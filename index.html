@@ -39,7 +39,7 @@
     </header>
 
     <main id="main">
-      <section class="hero shell">
+      <section id="home" class="hero shell">
         <div class="hero-copy">
           <p class="eyebrow"><span aria-hidden="true">◆</span> <span data-i18n="eyebrow">REGULATORY INTELLIGENCE / ACTION BRIEF</span></p>
           <h1>
@@ -111,7 +111,7 @@
         </article>
       </section>
 
-      <section class="latest shell" aria-labelledby="latest-title">
+      <section id="latest" class="latest shell" aria-labelledby="latest-title">
         <div class="section-heading">
           <div>
             <p class="eyebrow" data-i18n="decisionRadar">DECISION RADAR</p>
@@ -256,6 +256,14 @@
         </div>
       </section>
     </main>
+
+
+    <nav class="mobile-dock" aria-label="Mobile navigation">
+      <a href="#home" data-mobile-target="home" class="is-active"><span aria-hidden="true">⌂</span><small data-i18n="navHome">首頁</small></a>
+      <a href="#latest" data-mobile-target="latest"><span aria-hidden="true">◆</span><small data-i18n="navFocus">焦點</small></a>
+      <a href="#reports" data-mobile-target="reports"><span aria-hidden="true">▦</span><small data-i18n="navArchive">週報</small></a>
+      <a href="#coverage" data-mobile-target="coverage"><span aria-hidden="true">◎</span><small data-i18n="navScope">範圍</small></a>
+    </nav>
 
     <footer class="site-footer shell">
       <div>

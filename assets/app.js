@@ -60,7 +60,11 @@ const translations = {
     latestBrief: "最新週報",
     decisions: "管理決策",
     deadlines: "關鍵期限",
-    lastUpdatePrefix: "更新"
+    lastUpdatePrefix: "更新",
+    navHome: "首頁",
+    navFocus: "焦點",
+    navArchive: "週報",
+    navScope: "範圍"
   },
   en: {
     skip: "Skip to main content",
@@ -123,7 +127,11 @@ const translations = {
     latestBrief: "Latest brief",
     decisions: "Management decisions",
     deadlines: "Key deadlines",
-    lastUpdatePrefix: "Updated"
+    lastUpdatePrefix: "Updated",
+    navHome: "Home",
+    navFocus: "Focus",
+    navArchive: "Briefs",
+    navScope: "Scope"
   }
 };
 
@@ -335,5 +343,30 @@ document.querySelectorAll("#filters input, #filters select").forEach((field) => 
   });
 });
 
+const mobileNavLinks = [...document.querySelectorAll(".mobile-dock a")];
+const mobileSections = mobileNavLinks
+  .map((link) => document.getElementById(link.dataset.mobileTarget))
+  .filter(Boolean);
+
+if ("IntersectionObserver" in window && mobileSections.length) {
+  const mobileObserver = new IntersectionObserver((entries) => {
+    const visible = entries
+      .filter((entry) => entry.isIntersecting)
+      .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+    if (!visible) return;
+    mobileNavLinks.forEach((link) => {
+      link.classList.toggle("is-active", link.dataset.mobileTarget === visible.target.id);
+    });
+  }, { rootMargin: "-20% 0px -65% 0px", threshold: [0, 0.1, 0.4] });
+  mobileSections.forEach((section) => mobileObserver.observe(section));
+}
+
+mobileNavLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    mobileNavLinks.forEach((item) => item.classList.toggle("is-active", item === link));
+  });
+});
+
 applyLanguage(state.language);
 loadManifest();
+

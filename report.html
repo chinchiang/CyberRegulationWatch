@@ -12,6 +12,7 @@
     <script src="assets/report.js" defer></script>
   </head>
   <body class="report-page">
+    <div id="reading-progress" class="reading-progress" aria-hidden="true"></div>
     <a class="skip-link" href="#report-content">跳至週報內容</a>
     <div class="ambient ambient-a" aria-hidden="true"></div>
 
@@ -32,6 +33,11 @@
         <h1>載入週報中…</h1>
       </section>
 
+      <div class="report-mobile-tools" aria-label="Mobile report controls">
+        <a href="index.html#reports">← 週報列表</a>
+        <button id="toc-toggle" type="button" aria-expanded="false" aria-controls="report-toc">章節目錄</button>
+      </div>
+
       <div class="report-layout">
         <aside class="report-sidebar" aria-label="Report metadata">
           <div id="report-meta" class="meta-card"></div>
@@ -43,10 +49,13 @@
       </div>
     </main>
 
+    <div id="toc-backdrop" class="toc-backdrop" aria-hidden="true"></div>
+
     <footer class="site-footer shell">
       <div><strong>Cyber Regulation Watch</strong><span>Evidence → Impact → Action</span></div>
       <p>Asia/Taipei · MON 08:00</p>
     </footer>
   </body>
 </html>
+
 

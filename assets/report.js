@@ -2,6 +2,9 @@ const content = document.getElementById("report-content");
 const hero = document.getElementById("report-hero");
 const meta = document.getElementById("report-meta");
 const toc = document.getElementById("report-toc");
+const tocToggle = document.getElementById("toc-toggle");
+const tocBackdrop = document.getElementById("toc-backdrop");
+const readingProgress = document.getElementById("reading-progress");
 
 function escapeHtml(value) {
   return String(value ?? "")
@@ -100,7 +103,7 @@ function renderMarkdown(markdown) {
         rows.push(tableCells(lines[index]));
         index += 1;
       }
-      html.push(`<div class="table-wrap"><table><thead><tr>${headers.map((cell) => `<th>${inlineMarkdown(cell)}</th>`).join("")}</tr></thead><tbody>${rows.map((row) => `<tr>${headers.map((_, cellIndex) => `<td>${inlineMarkdown(row[cellIndex] || "")}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`);
+      html.push(`<div class="table-wrap"><table><thead><tr>${headers.map((cell) => `<th>${inlineMarkdown(cell)}</th>`).join("")}</tr></thead><tbody>${rows.map((row) => `<tr>${headers.map((_, cellIndex) => `<td data-label="${escapeHtml(headers[cellIndex] || "")}">${inlineMarkdown(row[cellIndex] || "")}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`);
       continue;
     }
 
@@ -226,5 +229,36 @@ async function loadReport() {
   }
 }
 
+function closeToc() {
+  document.body.classList.remove("toc-open");
+  if (tocToggle) tocToggle.setAttribute("aria-expanded", "false");
+}
+
+if (tocToggle) {
+  tocToggle.addEventListener("click", () => {
+    const open = document.body.classList.toggle("toc-open");
+    tocToggle.setAttribute("aria-expanded", String(open));
+  });
+}
+
+if (tocBackdrop) tocBackdrop.addEventListener("click", closeToc);
+toc.addEventListener("click", (event) => {
+  if (event.target.closest("a")) closeToc();
+});
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") closeToc();
+});
+
+function updateReadingProgress() {
+  if (!readingProgress) return;
+  const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+  const ratio = scrollable > 0 ? Math.min(1, Math.max(0, window.scrollY / scrollable)) : 0;
+  readingProgress.style.width = `${ratio * 100}%`;
+}
+window.addEventListener("scroll", updateReadingProgress, { passive: true });
+window.addEventListener("resize", updateReadingProgress);
+updateReadingProgress();
+
 loadReport();
+
 
