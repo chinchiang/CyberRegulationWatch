@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "1.0",
+  "moduleVersion": "EU CRA v3.1",
+  "lastUpdated": "2026-08-02T00:00:00+08:00",
+  "statusValues": [
+    "已正式生效",
+    "已發布但未生效",
+    "草案／諮詢中",
+    "官方非拘束性指引",
+    "第三方評論",
+    "尚未證實"
+  ],
+  "actionStatusValues": [
+    "未開始",
+    "進行中",
+    "已完成",
+    "逾期",
+    "已取消"
+  ],
+  "items": []
+}
