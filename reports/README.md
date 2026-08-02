@@ -93,3 +93,14 @@ Rules:
 - When the NÚKIB decision-delivery date is missing, display `MASTER CLOCK NOT CONFIRMED — INTERNAL REGISTRATION DECISION REQUIRED` and do not fabricate compliance dates.
 - Preserve the module's first-source, Tier 1 / Tier 2, legal-status, confidence, anti-hallucination, and cross-border legal-opinion rules.
 - Surface its eight out-of-cycle Flash Alert triggers only when the v4.0 conditions and no-duplicate rules are met.
+
+## ISO/IEC 27001 / IEC 62443 module source
+
+- Authoritative module: `modules/iso27001-iec62443-v1.1.md`
+- The scheduled integrated report must read the authoritative module on every run and keep its outputs nested under section 5 of the eight-section report alongside RED DA coverage.
+- This module does not create a separate weekly report. Its first execution uses Baseline Snapshot mode; subsequent executions use Delta mode and the module's persistent State File fields.
+- Preserve role separation across Enterprise ISMS, Asset Owner, Service Provider / Integrator / Maintenance Provider, Product Developer, Component Supplier, and System Product / Automation Solution Supplier. Never extend a component certificate into system or factory conformity.
+- Use original ISO / IEC editions as the lifecycle baseline. A national or regional adoption with different dates, identifiers, or page counts is not a Delta unless normative content, status, or applicability materially changes.
+- Preserve document type, lifecycle status, source tier, Admiralty code, `source_url`, `source_edition`, `verified_by`, and `last_verified_at` for every current-status statement.
+- Surface the ten v1.1 Out-of-Cycle Flash Alert conditions immediately, including certificate validity failures, material transition changes, blocking customer flow-downs, and product-release or factory-acceptance blockers.
+- For Shanghai or Chongqing logs, vulnerabilities, source code, design files, supplier data, or incident evidence, display `CHINA LEGAL REVIEW REQUIRED` and do not request cross-border transfer without Legal approval.
