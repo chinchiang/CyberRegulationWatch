@@ -1,7 +1,7 @@
 # Cyber Regulation Watch — EU AI Act Weekly Executive & Action Brief
 ## 產出規格 v4.0
 
-> 適用單位：全球資訊安全管理處（GISMD）
+> 適用單位：全球資安管理處（GSMD）
 > 規格更新日：2026-08-02
 > 版本沿革：v1（原始規格）→ v2（補 Digital Omnibus 基線、State File、ODM 下推路徑）→ v3（併入第二份審視意見並完成一手來源核實）→ v4（併入第三份審視意見：上游供應商、鄰接法規、跨語言檢索、輸出控制與防幻覺規則）
 
@@ -64,7 +64,7 @@
 | 監測期間 | 前一週一 00:00:00 至前一週日 23:59:59（Asia/Taipei），並保存來源原始發布時區與換算後時間 |
 | 語言 | 正體中文（臺灣慣用語），保留英文法規術語 |
 | 長度 | 第一層 Executive Brief 不超過 3 頁；P2／P3、Standards Tracker、Source Appendix 一律置於附錄 |
-| 主要收件人 | GISMD 處長、Legal／Compliance、AI Governance 窗口 |
+| 主要收件人 | GSMD 處長、Legal／Compliance、AI Governance 窗口 |
 | 副本 | IT Division、ICZ／Inventec Czech 合規窗口、相關 BG 產品安全代表（僅於該 BG 有 P0／P1 事項時） |
 
 ### 例外觸發（Out-of-Cycle Alert）
@@ -125,7 +125,7 @@
 
 - **PSG**：Notebook、Desktop、All-in-One PC、Workstation、AI PC、Gaming Notebook、Thin Client
 - **EBG**：General Purpose Server、AI／GPU Server、HPC Server、Rack Solution、Storage、Network Switch、Data Center Solution、Server Management Software、Air／Liquid／Immersion Cooling
-- **NBG**：Automotive Electronics（含 ADAS、智慧座艙、Vehicle Computer／HPC、Central Gateway、Zonal Controller 等）、5G、行動智慧／Industrial & Edge AI，以及 Smart Healthcare；涉及 IMIS 產品時須依實際法人、合約主體與內部 owner 再確認，不得將 NBG 直接等同於車用電子
+- **NBG**：Automotive Electronics、ADAS-related solutions、Smart Devices、Connected Products 及其他新興智慧產品
 
 **內部可能使用之 AI**：Generative AI、AI Assistant、Copilot、Chatbot、HR／Recruitment AI、Employee Analytics、Biometric Systems、AI Coding Assistant、AI Cybersecurity Tools、AI-enabled Manufacturing／Quality Inspection、AI Agent。
 
@@ -377,7 +377,7 @@ GDPR／CRA／NIS2／Data Act／DSA／Product Liability Directive／GPSR／Machin
 
 ### 5.3 影響對象
 
-Corporate／GISMD、Legal／Compliance、AI Governance、HR、Procurement、Marketing／Communications、R&D／Product Safety、PSG、EBG、NBG、ICZ／Inventec Czech、Third-party vendors and suppliers
+Corporate／GSMD、Legal／Compliance、AI Governance、HR、Procurement、Marketing／Communications、R&D／Product Safety、PSG、EBG、NBG、ICZ／Inventec Czech、Third-party vendors and suppliers
 
 ---
 
@@ -510,7 +510,7 @@ Source Appendix 每項須含：文件或新聞標題｜發布機關／媒體｜�
 
 **P0**：已禁止之 AI Practice｜已生效且可能違規｜30 天內法定期限｜正式執法或重大裁罰｜可能造成產品停止上市或重大營業影響｜法規基線重大變更｜harmonised standard 取得 OJEU citation 且對應現有產品線
 
-**P1**：90 天內須採取行動｜對 EU 產品、ICZ、員工或客戶有直接影響｜需 Legal、GISMD、R&D 或 BU 決策｜主要客戶已提出具期限之合規要求
+**P1**：90 天內須採取行動｜對 EU 產品、ICZ、員工或客戶有直接影響｜需 Legal、GSMD、R&D 或 BU 決策｜主要客戶已提出具期限之合規要求
 
 **P2**：90–180 天內應準備｜可能影響產品設計、採購、合約、教育訓練或證據保存
 
