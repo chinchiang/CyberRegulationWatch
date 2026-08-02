@@ -78,3 +78,18 @@ Rules:
 - The scheduled integrated report must read the authoritative module on every run. Its eleven CRA subsections remain nested under section 2 of the eight-section report.
 - The standalone `EU CRA 專版模組` automation is a disabled backup; it must not run alongside `Cyber Regulation Watch`.
 - CRA Flash Alert triggers in v3.1 must be surfaced immediately when detected and must preserve the module's source-tier, confidence, legal-status, and no-legal-conclusion rules.
+
+## EU AI Act module source
+
+- Authoritative module: `modules/eu-ai-act-v4.md`
+- The scheduled integrated report must read the authoritative module on every run and keep its outputs nested under section 3 of the eight-section report.
+- Re-verify the legal baseline and distinguish formal legal status from guidance, consultation, industry positions, and media reporting on every run.
+
+## NIS2 / Czech Cybersecurity module source
+
+- Authoritative module: `modules/nis2-czech-v4.md`
+- The scheduled integrated report must read the authoritative module on every run and keep its outputs nested under section 4 of the eight-section report.
+- Confirm the ICZ entity, ARES / CZ-NACE data, regulated service, provider scope, notification / registration decision, regime, and decision-delivery date before assigning applicability, deadlines, or owners.
+- When the NÚKIB decision-delivery date is missing, display `MASTER CLOCK NOT CONFIRMED — INTERNAL REGISTRATION DECISION REQUIRED` and do not fabricate compliance dates.
+- Preserve the module's first-source, Tier 1 / Tier 2, legal-status, confidence, anti-hallucination, and cross-border legal-opinion rules.
+- Surface its eight out-of-cycle Flash Alert triggers only when the v4.0 conditions and no-duplicate rules are met.
