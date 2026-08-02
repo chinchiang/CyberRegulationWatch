@@ -891,6 +891,11 @@ select {
   box-shadow: 0 22px 60px rgba(19, 98, 143, 0.22);
 }
 
+.scope-featured.scope-red {
+  background: linear-gradient(130deg, #30113f, #8a215d 52%, #f04b6e);
+  box-shadow: 0 22px 60px rgba(179, 37, 99, 0.24);
+}
+
 .scope-kicker {
   display: block;
   margin-bottom: 15px;
