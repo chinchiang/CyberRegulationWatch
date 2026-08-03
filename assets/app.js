@@ -47,6 +47,7 @@ const translations = {
     step3: "比對上週實質差異",
     step4: "轉成責任、期限與決策",
     footerLine: "證據 → 影響 → 行動",
+    authorCredit: "作者：Jungle",
     timezone: "時區",
     cadence: "頻率",
     emptyTitle: "尚無已發布的整合週報",
@@ -114,6 +115,7 @@ const translations = {
     step3: "Compare material week-over-week deltas",
     step4: "Translate into owners, deadlines, decisions",
     footerLine: "Evidence → Impact → Action",
+    authorCredit: "By Jungle",
     timezone: "Timezone",
     cadence: "Cadence",
     emptyTitle: "No integrated briefs published yet",
@@ -181,7 +183,12 @@ function safeText(value) {
 }
 
 function reportUrl(report) {
-  return `report.html?id=${encodeURIComponent(report.id)}`;
+  return "report.html?id=" + encodeURIComponent(report.id) + "&lang=" + encodeURIComponent(state.language);
+}
+
+function localizedReportField(report, field) {
+  const englishField = field + "En";
+  return state.language === "en" && report[englishField] ? report[englishField] : report[field];
 }
 
 function normalizeCounts(report) {
@@ -212,8 +219,8 @@ function renderLatest(report) {
     <div class="latest-report">
       <div>
         <span class="status-label status-${safeText(report.status)}">${safeText(t(statusKey))}</span>
-        <h3>${safeText(report.title)}</h3>
-        <p>${safeText(report.executiveSummary)}</p>
+        <h3>${safeText(localizedReportField(report, "title"))}</h3>
+        <p>${safeText(localizedReportField(report, "executiveSummary"))}</p>
         <div class="latest-actions">
           <a class="button button-primary" href="${reportUrl(report)}">${safeText(t("readBrief"))}<span aria-hidden="true">↗</span></a>
           <span class="button button-ghost">${safeText(dateFormatter(report.publishedAt))}</span>
@@ -232,11 +239,15 @@ function renderReports(reports) {
   const filtered = reports.filter((report) => {
     const haystack = [
       report.title,
+      report.titleEn,
       report.executiveSummary,
+      report.executiveSummaryEn,
       ...(report.scopes || []),
       ...(report.tags || []),
       ...(report.decisions || []),
-      ...(report.deadlines || [])
+      ...(report.decisionsEn || []),
+      ...(report.deadlines || []),
+      ...(report.deadlinesEn || [])
     ].join(" ").toLocaleLowerCase();
 
     return (!query || haystack.includes(query))
@@ -269,8 +280,8 @@ function renderReports(reports) {
           <span class="report-date">${safeText(dateFormatter(report.publishedAt))}</span>
           <span class="status-label status-${safeText(report.status)}">${safeText(t(statusKey))}</span>
         </div>
-        <h3>${safeText(report.title)}</h3>
-        <p>${safeText(report.executiveSummary)}</p>
+        <h3>${safeText(localizedReportField(report, "title"))}</h3>
+        <p>${safeText(localizedReportField(report, "executiveSummary"))}</p>
         <div class="tag-row">${tags.map((tag) => `<span class="tag">${safeText(tag)}</span>`).join("")}</div>
         <a class="report-link" href="${reportUrl(report)}"><span>${safeText(t("readBrief"))}</span><span aria-hidden="true">↗</span></a>
       </article>`;
