@@ -13,7 +13,7 @@
   </head>
   <body class="report-page">
     <div id="reading-progress" class="reading-progress" aria-hidden="true"></div>
-    <a class="skip-link" href="#report-content">跳至週報內容</a>
+    <a class="skip-link" href="#report-content" data-i18n="skip">跳至週報內容</a>
     <div class="ambient ambient-a" aria-hidden="true"></div>
 
     <header class="site-header report-header">
@@ -24,18 +24,24 @@
           <small>Weekly Executive &amp; Action Brief</small>
         </span>
       </a>
-      <a class="button button-ghost compact" href="index.html">← 返回儀表板</a>
+      <div class="header-actions">
+        <div class="language-switch" role="group" aria-label="Language">
+          <button type="button" data-lang="zh-Hant" aria-pressed="true">中</button>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <a class="button button-ghost compact" href="index.html" data-i18n="backDashboard">← 返回儀表板</a>
+      </div>
     </header>
 
     <main class="report-shell">
       <section id="report-hero" class="report-hero" aria-live="polite">
         <p class="eyebrow">CYBER REGULATION WATCH</p>
-        <h1>載入週報中…</h1>
+        <h1 data-i18n="loadingTitle">載入週報中…</h1>
       </section>
 
       <div class="report-mobile-tools" aria-label="Mobile report controls">
-        <a href="index.html#reports">← 週報列表</a>
-        <button id="toc-toggle" type="button" aria-expanded="false" aria-controls="report-toc">章節目錄</button>
+        <a href="index.html#reports" data-i18n="reportList">← 週報列表</a>
+        <button id="toc-toggle" type="button" aria-expanded="false" aria-controls="report-toc" data-i18n="tocButton">章節目錄</button>
       </div>
 
       <div class="report-layout">
@@ -44,7 +50,7 @@
           <nav id="report-toc" class="toc" aria-label="Table of contents"></nav>
         </aside>
         <article id="report-content" class="prose" aria-live="polite">
-          <p class="loading">正在讀取已查證內容…</p>
+          <p class="loading" data-i18n="loadingBody">正在讀取已查證內容…</p>
         </article>
       </div>
     </main>
@@ -52,7 +58,7 @@
     <div id="toc-backdrop" class="toc-backdrop" aria-hidden="true"></div>
 
     <footer class="site-footer shell">
-      <div><strong>Cyber Regulation Watch</strong><span>Evidence → Impact → Action</span></div>
+      <div><strong>Cyber Regulation Watch</strong><span data-i18n="footerLine">Evidence → Impact → Action</span><span data-i18n="authorCredit">作者：Jungle</span></div>
       <p>Asia/Taipei · MON 08:00</p>
     </footer>
   </body>
