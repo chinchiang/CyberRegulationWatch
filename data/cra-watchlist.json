@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0",
   "moduleVersion": "EU CRA v3.1",
-  "lastUpdated": "2026-08-02T00:00:00+08:00",
+  "lastUpdated": "2026-08-03T08:16:00+08:00",
   "statusValues": [
     "已正式生效",
     "已發布但未生效",
@@ -17,5 +17,112 @@
     "逾期",
     "已取消"
   ],
-  "items": []
+  "items": [
+    {
+      "itemId": "CRA-SRP-2026-001",
+      "title": "ENISA CRA Single Reporting Platform user guidance and go-live readiness",
+      "category": "基礎設施",
+      "firstSeenDate": "2026-07-31",
+      "currentStatus": "官方非拘束性指引",
+      "statusHistory": [
+        {
+          "date": "2026-08-03",
+          "from": "尚未證實",
+          "to": "官方非拘束性指引",
+          "note": "ENISA published AR registration and notification submission/update guidance; dedicated URL pending; no API at this stage."
+        }
+      ],
+      "priority": "P0",
+      "priorityHistory": [
+        {"date": "2026-08-03", "from": null, "to": "P0"}
+      ],
+      "affectedUnits": ["PSG", "EBG", "NBG", "IMIS", "GISMD", "ICZ"],
+      "affectedProductFamilies": ["PC", "Server", "AI Server", "Storage", "Networking", "Automotive", "5G", "Edge AI／Industrial IoT", "Smart Healthcare"],
+      "craApplicability": "邊界未明",
+      "action": "指定 Primary／Secondary SRP operators、建立 EU Login、完成 ENISA Q16 欄位 mapping 與第一輪人工 tabletop。",
+      "actionStatus": "進行中",
+      "suggestedDueDate": "2026-08-14",
+      "lastUpdatedDate": "2026-08-03",
+      "silentWeeks": 0,
+      "sources": [
+        "https://www.enisa.europa.eu/topics/product-security-and-certification/single-reporting-platform-srp"
+      ]
+    },
+    {
+      "itemId": "CRA-GUIDANCE-2026-001",
+      "title": "Commission Guidance C(2026) 5252 internal gap assessment",
+      "category": "下位法規",
+      "firstSeenDate": "2026-07-27",
+      "currentStatus": "官方非拘束性指引",
+      "statusHistory": [
+        {"date": "2026-07-27", "from": "尚未證實", "to": "官方非拘束性指引"}
+      ],
+      "priority": "P1",
+      "priorityHistory": [
+        {"date": "2026-07-27", "from": null, "to": "P1"}
+      ],
+      "affectedUnits": ["PSG", "EBG", "NBG", "IMIS", "GISMD", "ICZ"],
+      "affectedProductFamilies": ["PC", "Server", "AI Server", "Storage", "Networking", "Automotive", "5G", "Edge AI／Industrial IoT", "Smart Healthcare"],
+      "craApplicability": "邊界未明",
+      "action": "完成 scope、substantial modification、support period、reporting 四項內部 gap assessment。",
+      "actionStatus": "進行中",
+      "suggestedDueDate": "2026-08-14",
+      "lastUpdatedDate": "2026-08-03",
+      "silentWeeks": 1,
+      "sources": [
+        "https://digital-strategy.ec.europa.eu/en/library/commission-publishes-new-guidance-support-timely-cyber-resilience-act-implementation"
+      ]
+    },
+    {
+      "itemId": "CRA-STANDARDS-2026-001",
+      "title": "CRA harmonised standards, OJ citation, NANDO and priority work items",
+      "category": "標準",
+      "firstSeenDate": "2026-07-27",
+      "currentStatus": "草案／諮詢中",
+      "statusHistory": [
+        {"date": "2026-07-27", "from": "尚未證實", "to": "草案／諮詢中"}
+      ],
+      "priority": "P1",
+      "priorityHistory": [
+        {"date": "2026-07-27", "from": null, "to": "P1"}
+      ],
+      "affectedUnits": ["PSG", "EBG", "NBG", "IMIS", "GISMD", "ICZ"],
+      "affectedProductFamilies": ["PC", "Server", "AI Server", "Storage", "Networking", "Automotive", "5G", "Edge AI／Industrial IoT", "Smart Healthcare"],
+      "craApplicability": "在範圍內",
+      "action": "每週查證 OJ citation、NANDO body count、EN 40000-1-4 與 EN 304 627 狀態；不得把 draft/ratification 當 presumption。",
+      "actionStatus": "進行中",
+      "suggestedDueDate": "2026-09-11",
+      "lastUpdatedDate": "2026-08-03",
+      "silentWeeks": 1,
+      "sources": [
+        "https://portal.etsi.org/webapp/WorkProgram/Report_WorkItem.asp?SearchPage=TRUE&WKI_ID=74416",
+        "https://webgate.ec.europa.eu/single-market-compliance-space/notified-bodies/notified-body-list?filter=legislationId%3A155501%2CnotificationStatusId%3A1"
+      ]
+    },
+    {
+      "itemId": "CRA-CHINA-2026-001",
+      "title": "China-origin vulnerability reporting cross-border Legal Gate",
+      "category": "交互影響",
+      "firstSeenDate": "2026-07-27",
+      "currentStatus": "尚未證實",
+      "statusHistory": [
+        {"date": "2026-07-27", "from": null, "to": "尚未證實", "note": "Formal legal path not evidenced."}
+      ],
+      "priority": "P0",
+      "priorityHistory": [
+        {"date": "2026-07-27", "from": null, "to": "P0"}
+      ],
+      "affectedUnits": ["GISMD", "ICZ", "全公司"],
+      "affectedProductFamilies": ["PC", "Server", "AI Server", "Storage", "Networking", "Automotive", "5G", "Edge AI／Industrial IoT", "Smart Healthcare"],
+      "craApplicability": "邊界未明",
+      "action": "取得中國／外部法律意見，確認適用主體、資料欄位、通報決策權與不可跨境項目；未取得前不得設計規避路徑。",
+      "actionStatus": "未開始",
+      "suggestedDueDate": "2026-08-14",
+      "lastUpdatedDate": "2026-08-03",
+      "silentWeeks": 1,
+      "sources": [
+        "https://eur-lex.europa.eu/eli/reg/2024/2847/oj/eng"
+      ]
+    }
+  ]
 }
