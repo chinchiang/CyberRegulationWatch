@@ -4,6 +4,7 @@ The scheduled `Cyber Regulation Watch` automation appends one Markdown report pe
 
 ```text
 reports/YYYY/YYYY-MM-DD.md
+reports/YYYY/YYYY-MM-DD.en.md
 ```
 
 It must also append one matching object to `data/reports.json`.
@@ -31,17 +32,21 @@ Industry or trade-association statements belong under `INDUSTRY POSITION`. They 
 {
   "id": "2026-08-03",
   "title": "Cyber Regulation Watch｜2026-08-03",
+  "titleEn": "Cyber Regulation Watch | 2026-08-03",
+  "author": "Jungle",
   "publishedAt": "2026-08-03T08:00:00+08:00",
   "coverageStart": "2026-07-27",
   "coverageEnd": "2026-08-02",
   "status": "material-change",
   "executiveSummary": "300 字內管理摘要。",
+  "executiveSummaryEn": "English management summary.",
   "scopes": ["EU CRA", "EU AI Act", "NIS2"],
   "tags": ["Article 14", "SRP"],
   "priorityCounts": {"P0": 1, "P1": 2, "P2": 3, "P3": 0},
   "decisions": ["管理階層決策摘要"],
   "deadlines": ["2026-09-11 — CRA Article 14"],
   "reportPath": "reports/2026/2026-08-03.md",
+  "reportPathEn": "reports/2026/2026-08-03.en.md",
   "sourceCount": 12
 }
 ```
@@ -50,7 +55,10 @@ Rules:
 
 - `id` must be unique and use the report date.
 - `status` must be `material-change` or `no-material-change`.
-- `reportPath` must exist and stay relative to the repository root.
+- `reportPath` and `reportPathEn` must both exist and stay relative to the repository root.
+- Each report ID is one logical integrated report with paired Traditional Chinese and English Markdown editions. Do not create duplicate manifest entries or separate schedules.
+- The English edition must preserve the same eight-section order, legal-status labels, dates, priorities, material conclusions, direct sources, affected roles, deadlines and actions as the Traditional Chinese edition.
+- The website author credit and every report entry use `Jungle`; render it as 「作者：Jungle」 in Traditional Chinese and “By Jungle” in English.
 - Never delete or rewrite older weekly entries unless correcting a documented error.
 - Keep reports sorted newest-first in the manifest.
 - Important conclusions in Markdown must include a direct source URL and publication date.
